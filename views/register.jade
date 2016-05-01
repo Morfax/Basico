@@ -1,0 +1,18 @@
+extends layout
+block content
+	.container
+		.row#frist
+			.col-md-12.submenu
+				h2.titulo Registrar Usuario
+				br
+				form(action="/register",method="post")
+					.input-group.col-md-3
+						span(class="input-group-addon") Usuario
+						input(type="text" name="username" class="form-control" placeholder="Usuario" required)
+					br
+					.input-group.col-md-3
+						span(class="input-group-addon") Contraseña
+						input(type="password"  name="password" class="form-control" placeholder="Contraseña" required)
+					br
+					.input-group.col-md-3.text-center
+						input(type="submit" class="btn btn-primary" value="Registrar")
